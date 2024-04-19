@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+        <link href="./style/index.css" rel = "stylesheet">
+        <title>Calculator</title>
+    </head>
+
+    <body>
+            <h1>Calculator</h1>
+
+            <div class = "layout-calculator">
+
+                <div class = "layout-screen">
+                    <span id = "screen"></span>
+                </div>
+                
+                <div class = "button-container">
+                    <div class = "button-separation">
+                        <div class = "button" onclick="erase('')">
+                            CE
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "button-container">
+                    <div class = "button-separation">
+                        <div class = "button" onclick="pressbutton('7')">
+                            7
+                        </div>
+                    </div>
+                
+                    <div class = "button-separation" onclick="pressbutton('8')">
+                        <div class = "button">
+                            8
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressbutton('9')">
+                        <div class = "button">
+                            9
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressOperation('x')">
+                        <div class = "button">
+                            x
+                        </div>
+                    </div>
+                        
+                </div>
+        
+                <div class = "button-container">
+
+                    <div class = "button-separation" onclick="pressbutton('4')">
+                        <div class = "button">
+                            4
+                        </div>
+                    </div>
+                
+                    <div class = "button-separation" onclick="pressbutton('5')">
+                        <div class = "button">
+                            5
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressbutton('6')">
+                        <div class = "button">
+                            6
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressOperation('-')">
+                        <div class = "button">
+                            -
+                        </div>
+                    </div>
+
+                </div>
+                
+                    
+                <div class = "button-container">
+                    <div class = "button-separation" onclick="pressbutton('1')">
+                        <div class = "button">
+                            1
+                        </div>
+                    </div>
+                
+                    <div class = "button-separation" onclick="pressbutton('2')">
+                        <div class = "button">
+                            2
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressbutton('3')">
+                        <div class = "button">
+                            3
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="pressOperation('/')">.
+                        <div class = "button">
+                            /
+                        </div>
+                    </div>
+                    
+                </div>   
+                
+                <div class = "button-container">
+                    <div class = "button-separation">
+                        <div class = "button" onclick="pressbutton('0')">
+                            0
+                        </div>
+                    </div>
+                
+                    <div class = "button-separation" onclick="pressbutton('+')">
+                        <div class = "button">
+                            +
+                        </div>
+                    </div>
+
+                    <div class = "button-separation" onclick="pressbutton('^')">
+                        <div class = "button">
+                            ^
+                        </div>
+                    </div>
+        
+                    <div class = "button-separation" onclick="calculateResult('=')">
+                        <div class = "button">
+                            =
+                        </div>
+                    </div>
+                    
+                </div> 
+
+            </div>
+
+            <br>
+
+            <center><h3>Previous Results</h3></center>
+            <div class = "prev-layout">
+                <ul id = "prevres"></ul>
+            </div>
+
+            <br>
+        
+        <script src="./index.js"></script>
+    </body>
+</html>
